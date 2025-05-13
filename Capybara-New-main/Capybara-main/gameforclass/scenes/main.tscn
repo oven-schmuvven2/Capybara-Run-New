@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://b5qnqkqsugupg"]
+[gd_scene load_steps=5 format=3 uid="uid://b5qnqkqsugupg"]
 
 [ext_resource type="Script" uid="uid://7gwhrs5edxpo" path="res://main.gd" id="1_o5qli"]
 [ext_resource type="Script" uid="uid://di7tei75tbprf" path="res://Assets/Scripts/classes/level_data.gd" id="2_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://o1av314hrbhf" path="res://scenes/main_menu.tscn" id="3_sugp2"]
-[ext_resource type="Script" uid="uid://cwlyuac4m13ve" path="res://scenes/main_menu.gd" id="4_jyhfs"]
 
 [sub_resource type="Resource" id="Resource_sugp2"]
 script = ExtResource("2_0wfyh")
@@ -23,4 +22,3 @@ available_levels = Array[ExtResource("2_0wfyh")]([SubResource("Resource_sugp2")]
 [node name="UIMain" type="CanvasLayer" parent="."]
 
 [node name="MainMenu" parent="UIMain" instance=ExtResource("3_sugp2")]
-script = ExtResource("4_jyhfs")

@@ -1,7 +1,7 @@
 [gd_scene load_steps=17 format=3 uid="uid://docv0kjrjv85p"]
 
 [ext_resource type="Texture2D" uid="uid://c3e7y8e0vq8iw" path="res://Assets/sprites/mini_capy-removebg-preview.png" id="1_fvddv"]
-[ext_resource type="Script" uid="uid://cn14ux4jmr7fh" path="res://Assets/Scripts/player.gd" id="1_i3pqv"]
+[ext_resource type="Script" uid="uid://e5kx01begmii" path="res://player.gd" id="1_i3pqv"]
 [ext_resource type="Texture2D" uid="uid://yquxqyo8pf8" path="res://Assets/sprites/pixil-frame-0.png" id="1_stcbj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4flbx"]
