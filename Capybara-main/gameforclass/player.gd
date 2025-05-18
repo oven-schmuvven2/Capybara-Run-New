@@ -1,7 +1,7 @@
 class_name Player
 extends CharacterBody2D
 
-const SPEED = 220.0
+var SPEED = 220.0
 const JUMP_VELOCITY = -200.0
 const MAX_JUMP_PRESS_TIME = 0.2  # Maximum time in seconds to charge the jump
 const MAX_JUMP_BOOST = 1.5  # Maximum multiplier for jump velocity
