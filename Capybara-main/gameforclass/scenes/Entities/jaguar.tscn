@@ -67,4 +67,8 @@ frame_progress = 0.977756
 position = Vector2(-26.5, 0)
 target_position = Vector2(0, 15)
 
+[node name="RayCastSide" type="RayCast2D" parent="."]
+position = Vector2(-21.5, 0)
+target_position = Vector2(-8, 0)
+
 [connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
