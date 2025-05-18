@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://dj28f3xb0fgx2"]
+
+[ext_resource type="Texture2D" uid="uid://ci1jmtq6pg1ds" path="res://Assets/sprites/bron.webp" id="1_2sb52"]
+
+[node name="Bron" type="Area2D"]
+collision_layer = 255
+collision_mask = 255
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 4.76837e-07)
+scale = Vector2(0.297333, 0.306)
+texture = ExtResource("1_2sb52")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-6, -153, 31, -146, 60, -121, 74, -85, 76, -67, 81, -66, 86, -52, 93, -30, 93, -8, 90, -4, 94, 25, 85, 81, 75, 114, 64, 133, 41, 149, 12, 154, -14, 143, -30, 125, -46, 102, -60, 81, -70, 60, -75, 36, -80, 24, -90, 14, -93, -4, -94, -41, -86, -38, -93, -87, -83, -116, -64, -137, -33, -150)
