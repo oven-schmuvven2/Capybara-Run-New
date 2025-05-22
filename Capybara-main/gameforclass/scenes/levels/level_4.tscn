@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=3 uid="uid://fn75ilyruhhj"]
+[gd_scene load_steps=65 format=3 uid="uid://fn75ilyruhhj"]
 
 [ext_resource type="Script" uid="uid://r54275nbwbxo" path="res://Assets/Scripts/classes/level.gd" id="1_fcb7b"]
 [ext_resource type="Texture2D" uid="uid://btxc7op5n1qrd" path="res://Assets/sprites/tilemap.png" id="2_ov8fk"]
@@ -11,6 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://bsuwyr1fevbuc" path="res://Assets/sprites/button_sprite_sheet.png" id="9_12cdj"]
 [ext_resource type="Texture2D" uid="uid://bpphouc3vx17g" path="res://Assets/sprites/ButtonWall.png" id="10_r3huh"]
 [ext_resource type="Texture2D" uid="uid://do87l0e61vsw" path="res://Assets/sprites/Spider_web.png" id="11_lc5pf"]
+[ext_resource type="PackedScene" uid="uid://deyt2wspo2ute" path="res://scenes/Entities/jaguar.tscn" id="12_0n65g"]
+[ext_resource type="PackedScene" uid="uid://bs88trqfh6iiv" path="res://scenes/Entities/spider.tscn" id="13_uyomx"]
 [ext_resource type="FontFile" uid="uid://dcgwsdwwbmp01" path="res://Assets/Fonts/PixelifySans-VariableFont_wght.ttf" id="14_io455"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_53ty6"]
@@ -980,7 +982,13 @@ texture = ExtResource("11_lc5pf")
 
 [node name="Jaguars" type="Node2D" parent="."]
 
+[node name="Jaguar" parent="Jaguars" instance=ExtResource("12_0n65g")]
+position = Vector2(921, -810)
+
 [node name="Spiders" type="Node2D" parent="."]
+
+[node name="Spider" parent="Spiders" instance=ExtResource("13_uyomx")]
+position = Vector2(1570, -860)
 
 [node name="Label" type="Label" parent="."]
 offset_left = -30.0
