@@ -41,8 +41,7 @@ animations = [{
 
 [node name="Jaguar" type="CharacterBody2D"]
 scale = Vector2(2, 2)
-collision_layer = 34
-collision_mask = 33
+collision_layer = 2
 script = ExtResource("1_m667n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -71,6 +70,5 @@ target_position = Vector2(0, 15)
 [node name="RayCastSide" type="RayCast2D" parent="."]
 position = Vector2(-21.5, 0)
 target_position = Vector2(-8, 0)
-collision_mask = 33
 
 [connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
