@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://b7j8af60vemft"]
-
-[ext_resource type="Script" uid="uid://o16rl8s08p4y" path="res://scenes/finish_level.gd" id="1_nrl24"]
-
-[node name="FinishLevel" type="Area2D"]
-collision_mask = 128
-script = ExtResource("1_nrl24")
-
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
