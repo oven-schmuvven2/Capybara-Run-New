@@ -1,8 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://bdfj5m6onhga7"]
 
-[ext_resource type="Script" path="res://Assets/Scripts/title_screen.gd" id="1_s4lrb"]
 [ext_resource type="FontFile" uid="uid://dyg0yu4n61myu" path="res://Assets/Fonts/Naluka.ttf" id="1_sa3yf"]
 [ext_resource type="Texture2D" uid="uid://bs7gp1invitfx" path="res://Assets/sprites/tilemap-backgrounds.png" id="2_s4lrb"]
+
+[sub_resource type="Resource" id="Resource_sa3yf"]
+metadata/__load_path__ = "res://Assets/Scripts/title_screen.gd"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s4lrb"]
 texture = ExtResource("2_s4lrb")
@@ -27,7 +29,7 @@ tile_size = Vector2i(24, 24)
 sources/0 = SubResource("TileSetAtlasSource_s4lrb")
 
 [node name="TitleScreen" type="CanvasLayer"]
-script = ExtResource("1_s4lrb")
+script = SubResource("Resource_sa3yf")
 
 [node name="Label" type="Label" parent="."]
 offset_left = 152.0
