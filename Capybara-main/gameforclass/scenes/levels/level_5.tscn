@@ -883,7 +883,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mm8aj"]
-size = Vector2(4, 29)
+size = Vector2(5.75, 109.5)
 
 [sub_resource type="LabelSettings" id="LabelSettings_xh7kr"]
 font = ExtResource("14_5ocld")
@@ -990,7 +990,7 @@ animation = &"static"
 autoplay = "static"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Button/ButtonWall"]
-position = Vector2(192.25, -141.5)
+position = Vector2(249.375, -100)
 shape = SubResource("RectangleShape2D_mm8aj")
 
 [node name="Spiderweb1" type="StaticBody2D" parent="."]
